@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Car Launch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero-section" id="home">
+        <div class="hero-content">
+            <h1>Experience the Future with the New Electric Car</h1>
+            <p>Join us for the grand unveiling of the latest innovation in electric vehicles.</p>
+            <button class="cta-button" onclick="scrollToContent()">Learn More</button>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="logo">Electric Car Company</a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#cta">Sign Up</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="features-section" id="features">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="images/feature1.jpg" alt="Feature 1">
+                <h3>Eco-Friendly</h3>
+                <p>Our electric car is designed to reduce your carbon footprint and promote a greener future.</p>
+            </div>
+            <div class="feature">
+                <img src="images/feature2.jpg" alt="Feature 2">
+                <h3>Advanced Technology</h3>
+                <p>Equipped with the latest technology to provide an unparalleled driving experience.</p>
+            </div>
+            <div class="feature">
+                <img src="images/feature3.jpg" alt="Feature 3">
+                <h3>High Performance</h3>
+                <p>Experience unmatched performance with our state-of-the-art electric engine.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="vision-section">
+        <div class="vision">
+            <h2>Our vision</h2>
+            <p>We innovate mobility solutions with passion to enhance the quality of life.</p>
+            <video controls>
+                <source src="images/electric car.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="savings-section">
+        <h2>Estimated Savings (Over 5 Years)</h2>
+        <p>Ever-rising fuel prices becoming a huge concern? Switch to electric and see how driving an electric vehicle can be easy on your pocket and the planet.</p>
+        <form id="savings-form">
+            <label for="daily-commute">Daily Commute (km):</label>
+            <input type="number" id="daily-commute" value="70" required>
+            
+            <label for="fuel-price">Fuel Price (per litre in ₹):</label>
+            <input type="number" id="fuel-price" value="102" required>
+            
+            <button type="submit">Calculate Savings</button>
+        </form>
+        <div id="savings-results" class="savings-results">
+            <p id="fuel-cost-savings">Fuel cost savings: ₹<span></span></p>
+            <p id="co2-reduction">Equivalent Tailpipe CO2 Reduction: <span></span> Million grams</p>
+            <p>Equivalent to CO2 reduction by planting <span id="trees-planted"></span> trees.</p>
+        </div>
+    </section>
+
+    <section class="cta-section" id="cta">
+        <h2>Be the First to Own the Future</h2>
+        <p>Sign up now to receive exclusive updates and early access to our new electric car.</p>
+        <form id="signup-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us at <a href="mailto:info@electriccarcompany.com">info@electriccarcompany.com</a>.</p>
+    </section>
+     
+    <footer>
+        <p>&copy; 2024 Electric Car Company. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
